@@ -1,0 +1,807 @@
+body,
+head,
+footer {
+    /*font-family: 'PT Sans', sans-serif;
+    font-weight: 400;*/
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+    /*background-color: #00000032;*/
+    background: rgb(255, 255, 255);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+
+/* NavBar */
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 29, 64);
+    color: white;
+}
+
+.brand-title {
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin-right: 1rem;
+    padding: 0;
+    background-color: rgb(37, 29, 64);
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.navbar-links li:hover {
+    /*background-color: #252323;*/
+    background-color: rgb(60, 47, 104);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* Languages images */
+.languages {
+    display: flex;
+    position: relative;
+    justify-content: end;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/* Separating line */
+.line {
+    max-width: 1750px;
+    width: 95%;
+    margin: 1rem auto;
+    background: rgb(37, 29, 64);
+    height: 3px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+/* Main content */
+.content {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: #eff1f2;
+    color: #252323;
+    width: 90%;
+    height: 650px;
+    margin: 1rem auto;
+
+
+    max-width: 1600px;
+    max-height: 2000px;
+}
+
+.content1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+
+    background-color: #eff1f2;
+    color: #252323;
+    /*width: 90%;*/
+    height: 650px;
+    margin: 1rem auto;
+
+
+    max-width: 1600px;
+
+}
+
+
+
+.container {
+    width: 400px;
+    min-height: 400px;
+    background: #FFF;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    padding: 40px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+
+}
+
+/* Error msg to the user*/
+.error_msg {
+    color: rgb(37, 29, 64);
+    font-weight: 800;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container .login-text {
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container .login-social {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+    margin-bottom: 25px;
+}
+
+.container .login-social a {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    transition: .3s;
+}
+
+.container .login-social a i {
+    margin-right: 5px;
+}
+
+.container .login-social a.facebook {
+    background: #58B7E0;
+}
+
+.container .login-social a.twitter {
+    background: #58B7E0;
+}
+
+.container .login-social a.google-plus {
+    background: #58B7E0;
+}
+
+.container .login-social a.linkedin {
+    background: #58B7E0;
+}
+
+.container .login-social a.facebook:hover {
+    background: #58B7E0;
+}
+
+.container .login-social a.twitter:hover {
+    background: #58B7E0;
+}
+
+.container .login-social a.google-plus:hover {
+    background: #58B7E0;
+}
+
+.container .login-social a.linkedin:hover {
+    background: #58B7E0;
+}
+
+.container .login-email .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 25px;
+}
+
+.container .login-email .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.container .login-email .input-group input:focus,
+.container .login-email .input-group input:valid {
+    border-color: rgb(37, 29, 64);
+}
+
+.welcome_text {
+    color: rgb(255, 255, 255);
+}
+
+.container .login-email .input-group .btn {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: rgb(37, 29, 64);
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.register {
+    display: block;
+    width: 40%;
+    padding: 15px 20px;
+    text-align: flex-start;
+    border: none;
+    background: #ffffff;
+    outline: none;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+
+}
+
+.container .login-email .input-group .btn:hover {
+    transform: translateY(-5px);
+    background: rgb(37, 29, 64);
+}
+
+.login-register-text {
+    color: #111;
+    font-weight: 600;
+}
+
+.login-register-text a {
+    text-decoration: none;
+    color: rgb(37, 29, 64);
+}
+
+@media (max-width: 430px) {
+    .container {
+        width: 300px;
+    }
+
+    .container .login-social {
+        display: block;
+    }
+
+    .container .login-social a {
+        display: block;
+    }
+}
+
+.form_button {
+    margin-top: 40px;
+    font-size: large;
+
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #545759;
+}
+
+.form_button1 {
+    margin-top: 40px;
+    font-size: large;
+
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #725b5b;
+}
+
+table,
+td,
+tr {
+    border: 1px, solid black;
+    border-collapse: collapse;
+}
+
+.form {
+    background-color: whitesmoke;
+    color: #252323;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 0;
+
+}
+
+/* Border of the main text */
+.border {
+    border: 4px solid white;
+    width: 450px;
+    height: 560px;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.border.p {
+    margin: 0;
+}
+
+/* Gallery */
+.gallery {
+
+    width: 710px;
+    height: 560px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+    line-height: 0;
+
+    -webkit-column-count: 2;
+    /* split it into 5 columns */
+    -webkit-column-gap: 5px;
+    /* give it a 5px gap between columns */
+    -moz-column-count: 2;
+    -moz-column-gap: 5px;
+
+    column-count: 2;
+    column-gap: 0;
+    margin-top: 0;
+}
+
+.gallery img {
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    /* to match column gap */
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 150px;
+    margin: 1rem auto;
+}
+
+.stopka {
+    display: flex;
+    /*position: relative;*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+    width: 1600px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+}
+
+/* NavBavr responsive design */
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    position: relative;
+    /* to contain absolute elements */
+    padding-left: 30px;
+    /* free space for custom radio button */
+    cursor: pointer;
+}
+
+/* hide default radio button  */
+label input[type=radio] {
+    position: absolute;
+    /* prevent taking any space */
+    /* cross-browser hidingg */
+
+    width: 0;
+    height: 0;
+}
+
+/* custom radio button */
+label span {
+    position: absolute;
+    /* position to the free space in <label> */
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(78, 78, 78);
+    border-radius: 50%;
+    transition: .3s background-color;
+    /* slight transition */
+}
+
+/* the check icon */
+label span:after {
+    content: "";
+    position: absolute;
+    display: none;
+
+    /* middle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+label:hover span {
+    background-color: #ccc;
+}
+
+/**** Here's the trick ***/
+label input:checked~span {
+    background-color: rgb(37, 29, 64);
+}
+
+label input:checked~span:after {
+    display: block;
+}
+
+.transport_submit {
+
+    /* remove default behavior */
+    appearance: none;
+    -webkit-appearance: none;
+
+    /* usual styles */
+    padding: 13px;
+    font-size: 20px;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(37, 29, 64);
+    font-weight: 600;
+    border-radius: 10px;
+    width: 100%;
+    margin: 5px 0;
+    cursor: pointer;
+
+}
+
+.transport_submit:hover {
+    background-color: rgb(37, 29, 64);
+    color: #FFF;
+    transition: .4s background-color;
+    /* slight transition */
+}
+
+.export_form {
+    width: 100%;
+    border: 2px solid rgb(37, 29, 64);
+
+}
+
+td {
+    height: 35px;
+    padding: 5px;
+    text-align: left;
+    font-size: 20px;
+}
+
+#countrys {
+
+    appearance: none;
+    background-color: whitesmoke;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+.form_export {
+    background-color: whitesmoke;
+    margin: 15px 30px;
+    color: #252323;
+}
+
+.background_table {
+    background-color: whitesmoke;
+    margin: 15px 30px;
+    color: #252323;
+}
+
+.display_form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 15px;
+    padding: 30px 0;
+}
+
+.display_table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px 15px;
+    padding: 8px 5px;
+}
+
+input[type=text],
+select,
+input[type=email],
+input[type=number],
+input[type=datetime-local] {
+    padding: 10px 15px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(37, 29, 64);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact_form {
+    padding: 20px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(37, 29, 64);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.show_table td {
+
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* unvisited link */
+a:link {
+    color: rgb(37, 29, 64);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(17, 13, 29);
+}
+
+/* mouse over link */
+a:hover {
+    color: rgb(58, 45, 102);
+}
+
+/* selected link */
+a:active {
+    color: rgb(58, 45, 102);
+}
+
+
+.authorization_form {
+    border-collapse: separate;
+    border-spacing: 10px 5px;
+}
+
+.radio_flex {
+    display: inline;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.info {
+    color: #111;
+    font-weight: 100;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.contact {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: flex-start;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+label {
+    cursor: auto;
+}
+
+.form_headers {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: flex-start;
+    margin-right: 0;
+
+}
+
+.form_content {
+    font-size: 1.3rem;
+    font-weight: 450;
+    text-align: flex-start;
+    display: inline-flex;
+    margin-left: 0;
+    padding-left: 5px;
+    position: relative;
+
+}
+
+
+.comments {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    max-width: 600 px;
+}
+
+.comments_1 {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
+    max-width: 600 px;
+    margin-bottom: 4px;
+    margin-top: 0;
+    /*border: 1px solid black;*/
+}
+
+.message {
+    width: 400px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    resize: none;
+}
+
+.message:hover {
+    border: solid rgb(37, 29, 64) 2px;
+}
+
+.submit_comment {
+    /* remove default behavior */
+    appearance: none;
+    -webkit-appearance: none;
+
+    /* usual styles */
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    background-color: #ffffff;
+    color: rgb(37, 29, 64);
+    font-weight: 600;
+    border-radius: 10px;
+    width: 40%;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.submit_comment:hover{
+    background-color: rgb(37, 29, 64);
+    color: #FFF;
+    transition: .4s background-color;
+    /* slight transition */
+}
+
+.comment-box{
+    width: 550px;
+    padding: 0px;
+    margin-bottom: 2px;
+    margin-top: 0;
+    background-color: white;
+    /*border: 1px solid rgb(255, 0, 0);*/
+}
+.comment-box p{
+    line-height: 28px;
+    color: #111;
+}
